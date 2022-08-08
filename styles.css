@@ -1,0 +1,37 @@
+
+h1{
+    background-color: red;
+}
+body {
+    background-color:blue;
+    color: blue;
+  }
+ /* (A) 3 COLUMNS PER ROW */
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    grid-gap: 8px;
+  }
+  /* (B) 1 COL ON SMALL SCREENS */
+  @media screen and (max-width:768px) {
+    #grid { grid-template-columns: auto; }
+  }
+  /* (C) OPTIONAL FOR THE CELLS */
+  .head, .cell { padding: 10px; }
+  .head {
+    font-weight: bold;
+    border: 1px solid pink;
+    background: pink;
+  }
+  .cell {
+    border: 10px solid black;
+    background: pink;
+  }
+  .userInput{
+    font: 100
+  }
+ 
+#id{
+background-color: white;
+}
+
